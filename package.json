@@ -1,0 +1,45 @@
+{
+  "name": "ts-workflow-engine-service-1606",
+  "version": "1.0.0",
+  "description": "This is a microservice to handle workflow.",
+  "main": "app.ts",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon src/server.ts",
+    "predev": "echo 'Starting development server...'",
+    "development": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "Typescript",
+    "Prisma",
+    "Redis",
+    "Kafka"
+  ],
+  "author": "Tanmay Singh",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.13.0",
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "ioredis": "^5.7.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10",
+    "prisma": "^6.13.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.2.0"
+  }
+}
