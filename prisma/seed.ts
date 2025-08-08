@@ -29,6 +29,17 @@ async function main() {
                 notification: false,
                 steps: [
                     {
+                        type: 'contextPopulationStep',
+                        config: {
+                            required: true,
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            forwardBody: true
+                        }
+                    },
+                    {
                         type: 'callExternalService',
                         config: {
                             method: 'POST',
@@ -65,6 +76,17 @@ async function main() {
                 notification: false,
                 steps: [
                     {
+                        type: 'contextPopulationStep',
+                        config: {
+                            required: true,
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            forwardBody: true
+                        }
+                    },
+                    {
                         type: 'validateToken',
                         config: {
                             required: true,
@@ -83,6 +105,19 @@ async function main() {
                                 'Content-Type': 'application/json'
                             },
                             forwardBody: true
+                        }
+                    },
+                    {
+                        type: "notificationStep",
+                        config: {
+                            gearId: "1625",
+                            scenarioId: "00002",
+                            emailOTP: true,
+                            mobileOTP: false,
+                            appNotification: true,
+                            appTitle: "Password Changed",
+                            appMessage: "Your password has been successfully updated",
+                            expirySeconds: 36000
                         }
                     }
                 ]
