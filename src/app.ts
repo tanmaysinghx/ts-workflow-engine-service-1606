@@ -4,6 +4,8 @@ import cors from 'cors';
 import helmet from 'helmet';
 import { logger } from './middleware/logger';
 import workflowRoutes from './routes/workflow-routes';
+import register, { getMetrics } from './utils/metrics';
+import { setupSwagger } from './config/swagger';
 
 const app = express();
 
@@ -18,9 +20,16 @@ app.use(bodyParser.json());
 app.use(helmet());
 app.use(logger);
 
+/* Swagger docs */
+setupSwagger(app);
+
+/* API routes */
 // app.use('/v1/api/health', healthRoutes);
 app.use(`/${process.env.API_VERSION}/api/workflow-engine`, workflowRoutes);
 
-export default app;
+app.get('/metrics', async (req, res) => {
+    res.set('Content-Type', register.contentType);
+    res.end(await getMetrics());
+});
 
-// http://localhost:1606/v1/api/worflow-engine/:workflowIdId?region=local&apiVersion=v1&method=GET
+export default app;

@@ -1,5 +1,6 @@
 import { StepContext } from "../workflows/workflow-types";
 import { contextPopulationStep } from "./context-population-step";
+import { metricsFinalizeStep, metricsStep } from "./metrics-step";
 import { notificationStep } from "./notification-step";
 import { handleOTP } from "./otp-step";
 import { callExternalService } from "./service-call-step";
@@ -12,6 +13,8 @@ export const stepRegistry: Record<string, StepHandler> = {
     callExternalService,
     handleOTP,
     validateToken: validateTokenStep,
-    notificationStep
+    notificationStep,
+    metricsStep,
+    metricsFinalizeStep
     // Add other step handlers here as needed
 };

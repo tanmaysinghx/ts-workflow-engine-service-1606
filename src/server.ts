@@ -12,6 +12,7 @@ app.listen(PORT, async () => {
     try {
         await connectToDatabase();
         logger.info('Database connection successful');
+        logger.info("Swagger docs at /api-docs");
     } catch (error) {
         if (error instanceof Error) {
             logger.error(`Database connection failed: ${error.message}`);
