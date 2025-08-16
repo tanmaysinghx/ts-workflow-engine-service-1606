@@ -108,7 +108,7 @@ async function main() {
         ]
     );
 
-    // 16250002 - Login
+    // 16250002 - Login - Local
     await createWorkflow(
         '16250002',
         'Auth Login Workflow - Local',
@@ -146,6 +146,49 @@ async function main() {
                 config: {
                     metricName: "auth_login_finalize",
                     tags: { region: "local", microservice: "auth-service" }
+                }
+            }
+        ]
+    );
+
+    // 16251002 - Login - Docker
+    await createWorkflow(
+        '16251002',
+        'Auth Login Workflow - Docker',
+        'docker',
+        'auth-service',
+        'http://ts-auth-service-1625:1625',
+        '/v2/api/auth/login',
+        'POST',
+        false,
+        false,
+        true,
+        [
+            {
+                type: "notificationStep",
+                config: {
+                    gearId: "1625",
+                    scenarioId: "00002",
+                    emailOTP: true,
+                    mobileOTP: false,
+                    appNotification: true,
+                    appTitle: "Login Successful",
+                    appMessage: "You have successfully logged in",
+                    expirySeconds: 6000
+                }
+            },
+            {
+                type: "metricsStep",
+                config: {
+                    metricName: "auth_login",
+                    tags: { region: "docker", microservice: "auth-service" }
+                }
+            },
+            {
+                type: "metricsFinalizeStep",
+                config: {
+                    metricName: "auth_login_finalize",
+                    tags: { region: "docker", microservice: "auth-service" }
                 }
             }
         ]
