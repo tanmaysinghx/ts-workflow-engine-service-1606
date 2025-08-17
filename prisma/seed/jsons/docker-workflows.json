@@ -75,7 +75,7 @@
     },
     {
         "workflowId": "16250003",
-        "name": "Auth Change Password Workflow - docker",
+        "name": "Auth Change Password Workflow - Docker",
         "region": "docker",
         "microserviceName": "auth-service",
         "microservicePrefix": "http://ts-auth-service-1625:1625",
@@ -102,7 +102,7 @@
     },
     {
         "workflowId": "16250004",
-        "name": "Auth Refresh Token Workflow - docker",
+        "name": "Auth Refresh Token Workflow - Docker",
         "region": "docker",
         "microserviceName": "auth-service",
         "microservicePrefix": "http://ts-auth-service-1625:1625",
@@ -115,7 +115,7 @@
     },
     {
         "workflowId": "16250005",
-        "name": "Auth Verify Token Workflow - docker",
+        "name": "Auth Verify Token Workflow - Docker",
         "region": "docker",
         "microserviceName": "auth-service",
         "microservicePrefix": "http://ts-auth-service-1625:1625",
@@ -128,7 +128,7 @@
     },
     {
         "workflowId": "16250006",
-        "name": "Health Check Workflow - docker",
+        "name": "Health Check Workflow - Docker",
         "region": "docker",
         "microserviceName": "auth-service",
         "microservicePrefix": "http://ts-auth-service-1625:1625",
