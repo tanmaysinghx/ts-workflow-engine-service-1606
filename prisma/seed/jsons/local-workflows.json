@@ -1,0 +1,142 @@
+[
+    {
+        "workflowId": "16250001",
+        "name": "Auth Register Workflow - Local",
+        "region": "local",
+        "microserviceName": "auth-service",
+        "microservicePrefix": "http://localhost:1625",
+        "downstreamEndpoint": "/v2/api/auth/register",
+        "method": "POST",
+        "tokenCheck": false,
+        "otpFlow": false,
+        "notification": true,
+        "extraSteps": [
+            {
+                "type": "notificationStep",
+                "config": {
+                    "gearId": "1625",
+                    "scenarioId": "00001",
+                    "emailOTP": true,
+                    "mobileOTP": false,
+                    "appNotification": true,
+                    "appTitle": "Registration Successful",
+                    "appMessage": "You have successfully registered",
+                    "expirySeconds": 6000
+                }
+            }
+        ]
+    },
+    {
+        "workflowId": "16250002",
+        "name": "Auth Login Workflow - Local",
+        "region": "local",
+        "microserviceName": "auth-service",
+        "microservicePrefix": "http://localhost:1625",
+        "downstreamEndpoint": "/v2/api/auth/login",
+        "method": "POST",
+        "tokenCheck": false,
+        "otpFlow": false,
+        "notification": true,
+        "extraSteps": [
+            {
+                "type": "notificationStep",
+                "config": {
+                    "gearId": "1625",
+                    "scenarioId": "00002",
+                    "emailOTP": true,
+                    "mobileOTP": false,
+                    "appNotification": true,
+                    "appTitle": "Login Successful",
+                    "appMessage": "You have successfully logged in",
+                    "expirySeconds": 6000
+                }
+            },
+            {
+                "type": "metricsStep",
+                "config": {
+                    "metricName": "auth_login",
+                    "tags": {
+                        "region": "local",
+                        "microservice": "auth-service"
+                    }
+                }
+            },
+            {
+                "type": "metricsFinalizeStep",
+                "config": {
+                    "metricName": "auth_login_finalize",
+                    "tags": {
+                        "region": "local",
+                        "microservice": "auth-service"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "workflowId": "16250003",
+        "name": "Auth Change Password Workflow - Local",
+        "region": "local",
+        "microserviceName": "auth-service",
+        "microservicePrefix": "http://localhost:1625",
+        "downstreamEndpoint": "/v2/api/auth/change-password",
+        "method": "POST",
+        "tokenCheck": true,
+        "otpFlow": false,
+        "notification": true,
+        "extraSteps": [
+            {
+                "type": "notificationStep",
+                "config": {
+                    "gearId": "1625",
+                    "scenarioId": "00002",
+                    "emailOTP": true,
+                    "mobileOTP": false,
+                    "appNotification": true,
+                    "appTitle": "Password Changed",
+                    "appMessage": "Your password has been successfully updated",
+                    "expirySeconds": 36000
+                }
+            }
+        ]
+    },
+    {
+        "workflowId": "16250004",
+        "name": "Auth Refresh Token Workflow - Local",
+        "region": "local",
+        "microserviceName": "auth-service",
+        "microservicePrefix": "http://localhost:1625",
+        "downstreamEndpoint": "/v2/api/auth/refresh-token",
+        "method": "POST",
+        "tokenCheck": false,
+        "otpFlow": false,
+        "notification": false,
+        "extraSteps": []
+    },
+    {
+        "workflowId": "16250005",
+        "name": "Auth Verify Token Workflow - Local",
+        "region": "local",
+        "microserviceName": "auth-service",
+        "microservicePrefix": "http://localhost:1625",
+        "downstreamEndpoint": "/v2/api/auth/verify/verify-token",
+        "method": "POST",
+        "tokenCheck": false,
+        "otpFlow": false,
+        "notification": false,
+        "extraSteps": []
+    },
+    {
+        "workflowId": "16250006",
+        "name": "Health Check Workflow - Local",
+        "region": "local",
+        "microserviceName": "auth-service",
+        "microservicePrefix": "http://localhost:1625",
+        "downstreamEndpoint": "/v2/api/health/health-check",
+        "method": "GET",
+        "tokenCheck": false,
+        "otpFlow": false,
+        "notification": false,
+        "extraSteps": []
+    }
+]
