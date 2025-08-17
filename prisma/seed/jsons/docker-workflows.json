@@ -1,5 +1,32 @@
 [
     {
+        "workflowId": "16250001",
+        "name": "Auth Register Workflow - Docker",
+        "region": "docker",
+        "microserviceName": "auth-service",
+        "microservicePrefix": "http://ts-auth-service-1625:1625",
+        "downstreamEndpoint": "/v2/api/auth/register",
+        "method": "POST",
+        "tokenCheck": false,
+        "otpFlow": false,
+        "notification": true,
+        "extraSteps": [
+            {
+                "type": "notificationStep",
+                "config": {
+                    "gearId": "1625",
+                    "scenarioId": "00001",
+                    "emailOTP": true,
+                    "mobileOTP": false,
+                    "appNotification": true,
+                    "appTitle": "Registration Successful",
+                    "appMessage": "You have successfully registered",
+                    "expirySeconds": 6000
+                }
+            }
+        ]
+    },
+    {
         "workflowId": "16250002",
         "name": "Auth Login Workflow - Docker",
         "region": "docker",
@@ -45,5 +72,71 @@
                 }
             }
         ]
+    },
+    {
+        "workflowId": "16250003",
+        "name": "Auth Change Password Workflow - docker",
+        "region": "docker",
+        "microserviceName": "auth-service",
+        "microservicePrefix": "http://ts-auth-service-1625:1625",
+        "downstreamEndpoint": "/v2/api/auth/change-password",
+        "method": "POST",
+        "tokenCheck": true,
+        "otpFlow": false,
+        "notification": true,
+        "extraSteps": [
+            {
+                "type": "notificationStep",
+                "config": {
+                    "gearId": "1625",
+                    "scenarioId": "00002",
+                    "emailOTP": true,
+                    "mobileOTP": false,
+                    "appNotification": true,
+                    "appTitle": "Password Changed",
+                    "appMessage": "Your password has been successfully updated",
+                    "expirySeconds": 36000
+                }
+            }
+        ]
+    },
+    {
+        "workflowId": "16250004",
+        "name": "Auth Refresh Token Workflow - docker",
+        "region": "docker",
+        "microserviceName": "auth-service",
+        "microservicePrefix": "http://ts-auth-service-1625:1625",
+        "downstreamEndpoint": "/v2/api/auth/refresh-token",
+        "method": "POST",
+        "tokenCheck": false,
+        "otpFlow": false,
+        "notification": false,
+        "extraSteps": []
+    },
+    {
+        "workflowId": "16250005",
+        "name": "Auth Verify Token Workflow - docker",
+        "region": "docker",
+        "microserviceName": "auth-service",
+        "microservicePrefix": "http://ts-auth-service-1625:1625",
+        "downstreamEndpoint": "/v2/api/auth/verify/verify-token",
+        "method": "POST",
+        "tokenCheck": false,
+        "otpFlow": false,
+        "notification": false,
+        "extraSteps": []
+    },
+    {
+        "workflowId": "16250006",
+        "name": "Health Check Workflow - docker",
+        "region": "docker",
+        "microserviceName": "auth-service",
+        "microservicePrefix": "http://ts-auth-service-1625:1625",
+        "downstreamEndpoint": "/v2/api/health/health-check",
+        "method": "GET",
+        "tokenCheck": false,
+        "otpFlow": false,
+        "notification": false,
+        "extraSteps": []
     }
 ]
