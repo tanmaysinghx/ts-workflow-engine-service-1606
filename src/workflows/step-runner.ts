@@ -15,5 +15,12 @@ export const executeStep = async (
 
     logger.info(`Executing step: ${step.type} with config:`, JSON.stringify(step.config));
 
-    return handler(step.config, context, workflowConfig);
+    const result = await handler(step.config, context, workflowConfig);
+
+    if (result.headers?.['set-cookie']) {
+        logger.info(`Step ${step.type} returned Set-Cookie headers`, result.headers['set-cookie']);
+    }
+
+    return result;
 };
+

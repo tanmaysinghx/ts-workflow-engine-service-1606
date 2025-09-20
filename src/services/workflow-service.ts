@@ -4,11 +4,28 @@ import { buildErrorResponse, buildSuccessResponse } from "../utils/response-buil
 import { v4 as uuidv4 } from 'uuid';
 import logger from "../utils/logger";
 
+function accumulateSetCookies(
+    existingCookies: string[] | undefined,
+    newSetCookie: string | string[]
+): string[] {
+    let cookies = existingCookies ? [...existingCookies] : [];
+
+    if (Array.isArray(newSetCookie)) {
+        cookies.push(...newSetCookie);
+    } else if (typeof newSetCookie === 'string') {
+        cookies.push(newSetCookie);
+    }
+
+    return cookies;
+}
+
 export const processWorkflow = async (workflowId: string, region: string, context: any, version: string) => {
     const transactionId = uuidv4();
     const startTime = new Date(); // Start time for timing
-    const workflowTrace: any[] = []; // To collect trace
-    const diagnosticCodes: string[] = []; // To collect any diagnostic codes
+    const workflowTrace: any[] = [];
+    const diagnosticCodes: string[] = [];
+
+    let setCookie: string[] | undefined;
 
     try {
         const definition = await getWorkflowDefinition(workflowId, region);
@@ -24,6 +41,10 @@ export const processWorkflow = async (workflowId: string, region: string, contex
                 throw { errors: { [step.type]: result.error } };
             }
 
+            if (result.headers && result.headers['set-cookie']) {
+                setCookie = accumulateSetCookies(setCookie, result.headers['set-cookie']);
+            }
+
             workflowTrace.push({
                 step: step.type,
                 status: 'success',
@@ -36,16 +57,19 @@ export const processWorkflow = async (workflowId: string, region: string, contex
 
         const downstreamResp = workflowTrace.find(r => r.step === 'callExternalService')?.output || {};
 
-        return buildSuccessResponse(
-            transactionId,
-            version,
-            definition.config,
-            downstreamResp,
-            context,
-            workflowTrace,
-            startTime,
-            diagnosticCodes
-        );
+        return {
+            ...buildSuccessResponse(
+                transactionId,
+                version,
+                definition.config,
+                downstreamResp,
+                context,
+                workflowTrace,
+                startTime,
+                diagnosticCodes
+            ),
+            setCookie
+        };
     } catch (err: any) {
         return buildErrorResponse(transactionId, version, err);
     }

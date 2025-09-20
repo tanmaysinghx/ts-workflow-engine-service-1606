@@ -24,7 +24,7 @@ export async function callExternalService(config: any, context: any, workflowCon
             headers,
         });
 
-        return { data: response.data };
+        return { data: response.data, headers: response.headers };
     } catch (err: any) {
         return { error: `Service call failed: ${err.message}` };
     }

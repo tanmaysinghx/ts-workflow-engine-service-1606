@@ -18,6 +18,12 @@ export const handleWorkflowRequest = async (req: Request, res: Response) => {
     };
 
     logger.info(`Handling workflow request for ID: ${workflowId}, Region: ${region}, API Version: ${apiVersion}`, { context });
+
     const result = await processWorkflow(workflowId, region, context, apiVersion);
+
+    if ('setCookie' in result && result.setCookie) {
+        res.setHeader('set-cookie', result.setCookie);
+    }
+    
     return res.status(result.success ? 200 : 400).json(result);
 };

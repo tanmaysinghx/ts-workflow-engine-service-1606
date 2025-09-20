@@ -23,7 +23,6 @@ export async function validateTokenStep(config: any, context: any, workflowConfi
             ...decoded,
         };
 
-        console.log("UserEmail from token:", context.user.email);
         return { data: { message: `Token verified for ${decoded.email}` } };
     } catch (err: any) {
         return { error: `Token verification failed: ${err.message}` };

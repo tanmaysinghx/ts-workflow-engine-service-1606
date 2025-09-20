@@ -1011,3 +1011,417 @@
 {"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-08-17 11:41:42"}
 {"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-08-17 11:41:42"}
 {"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-08-17 11:41:42"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-08-23 04:51:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-08-23 04:51:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-08-23 04:51:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-08-23 04:51:19"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"*/*","accept-encoding":"gzip, deflate, br","authorization":"Bearer BearerreyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0OTM5MmZjMSIsInJvbGVJZCI6IjAwMDEiLCJpYXQiOjE3MjU3MzA1NDMsImV4cCI6MTcyNTczMTQ0M30.Nx5xr6gbRL2txHgIwSSC8JRliGcw0-AUbdwoI6Jkhtg","cache-control":"no-cache","connection":"keep-alive","content-length":"75","content-type":"application/json","host":"localhost:1606","postman-token":"019b4114-e5eb-4c82-8151-9a5ca5076dc5","user-agent":"PostmanRuntime/7.45.0"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: docker, API Version: v1","timestamp":"2025-08-23 04:52:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: docker with version: v1","timestamp":"2025-08-23 04:52:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-08-23 04:52:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-08-23 04:52:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-08-23 04:52:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/login with method: POST","timestamp":"2025-08-23 04:52:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-08-23 04:52:22"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-08-23 04:52:22"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-08-23 04:52:22"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-08-23 04:52:22"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-08-23 05:09:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-08-23 05:09:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-08-23 05:09:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-08-23 05:09:31"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"61","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-08-23 05:11:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-08-23 05:11:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-08-23 05:11:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-08-23 05:11:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-08-23 05:11:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-08-23 05:11:19"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"61","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: docker, API Version: v1","timestamp":"2025-08-23 05:11:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: docker with version: v1","timestamp":"2025-08-23 05:11:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-08-23 05:11:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-08-23 05:11:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-08-23 05:11:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/login with method: POST","timestamp":"2025-08-23 05:11:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-08-23 05:11:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-08-23 05:11:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-08-23 05:11:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-08-23 05:11:31"}
+{"context":{"apiVersion":"v1","body":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1NTkyNTg5MSwiZXhwIjoxNzU1OTI5NDkxfQ.1-ggwLbY2wPmqHH6qhHvvWNved_8toRiALBEEb3mR7Q"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"235","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250005, Region: docker, API Version: v1","timestamp":"2025-08-23 05:13:57"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250005 in region: docker with version: v1","timestamp":"2025-08-23 05:13:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-08-23 05:13:58"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"61","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: docker, API Version: v1","timestamp":"2025-08-23 05:27:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: docker with version: v1","timestamp":"2025-08-23 05:27:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-08-23 05:27:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-08-23 05:27:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-08-23 05:27:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/login with method: POST","timestamp":"2025-08-23 05:27:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-08-23 05:27:16"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-08-23 05:27:16"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-08-23 05:27:16"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-08-23 05:27:16"}
+{"context":{"apiVersion":"v1","body":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1NTkyNjgzNSwiZXhwIjoxNzU1OTMwNDM1fQ.sLSs0NlVbl1qbPR5fsyiQ88I6UzK4fgpgHutTjL4xK8"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"235","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250005, Region: docker, API Version: v1","timestamp":"2025-08-23 05:27:48"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250005 in region: docker with version: v1","timestamp":"2025-08-23 05:27:48"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-08-23 05:27:48"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-01 15:28:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-01 15:28:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-01 15:28:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-01 15:28:15"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"61","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: docker, API Version: v1","timestamp":"2025-09-01 15:28:33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: docker with version: v1","timestamp":"2025-09-01 15:28:33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 15:28:33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-01 15:28:33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-01 15:28:33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-01 15:28:33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-01 15:28:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-01 15:28:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-01 15:28:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-01 15:28:35"}
+{"context":{"apiVersion":"v1","body":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1Njc0MDUxNCwiZXhwIjoxNzU2NzQ0MTE0fQ.cyMrHRVtrlT_KQ9ybba236Vnq05wZy5dp7de5WB741w"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"235","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 162500004, Region: docker, API Version: v1","timestamp":"2025-09-01 15:28:51"}
+{"context":{"apiVersion":"v1","body":{"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1Njc0MDUxNCwiZXhwIjoxNzU5MzMyNTE0fQ.NI0wNRPknDchesjD0-WoA5cWw-SL9Ypna4IkP9v01Gs"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"174","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 162500005, Region: docker, API Version: v1","timestamp":"2025-09-01 15:28:52"}
+{"context":{"apiVersion":"v1","body":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1Njc0MDUxNCwiZXhwIjoxNzU2NzQ0MTE0fQ.cyMrHRVtrlT_KQ9ybba236Vnq05wZy5dp7de5WB741w"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"235","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 162500004, Region: docker, API Version: v1","timestamp":"2025-09-01 16:29:03"}
+{"context":{"apiVersion":"v1","body":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1Njc0MDUxNCwiZXhwIjoxNzU2NzQ0MTE0fQ.cyMrHRVtrlT_KQ9ybba236Vnq05wZy5dp7de5WB741w"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"235","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 162500004, Region: docker, API Version: v1","timestamp":"2025-09-01 16:29:45"}
+{"context":{"apiVersion":"v1","body":{"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1Njc0MDUxNCwiZXhwIjoxNzU5MzMyNTE0fQ.NI0wNRPknDchesjD0-WoA5cWw-SL9Ypna4IkP9v01Gs"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"174","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 162500005, Region: docker, API Version: v1","timestamp":"2025-09-01 16:29:45"}
+{"context":{"apiVersion":"v1","body":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1Njc0MDUxNCwiZXhwIjoxNzU2NzQ0MTE0fQ.cyMrHRVtrlT_KQ9ybba236Vnq05wZy5dp7de5WB741w"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"235","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 162500004, Region: docker, API Version: v1","timestamp":"2025-09-01 16:30:29"}
+{"context":{"apiVersion":"v1","body":{"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1Njc0MDUxNCwiZXhwIjoxNzU5MzMyNTE0fQ.NI0wNRPknDchesjD0-WoA5cWw-SL9Ypna4IkP9v01Gs"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"174","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 162500005, Region: docker, API Version: v1","timestamp":"2025-09-01 16:30:30"}
+{"context":{"apiVersion":"v1","body":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1Njc0MDUxNCwiZXhwIjoxNzU2NzQ0MTE0fQ.cyMrHRVtrlT_KQ9ybba236Vnq05wZy5dp7de5WB741w"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"235","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 162500004, Region: docker, API Version: v1","timestamp":"2025-09-01 16:31:38"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"61","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: docker, API Version: v1","timestamp":"2025-09-01 16:32:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: docker with version: v1","timestamp":"2025-09-01 16:32:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 16:32:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-01 16:32:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-01 16:32:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-01 16:32:21"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-01 16:32:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-01 16:32:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-01 16:32:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-01 16:32:24"}
+{"context":{"apiVersion":"v1","body":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1Njc0NDM0MiwiZXhwIjoxNzU2NzQ3OTQyfQ.L7gMwBdIJ5NeF7rFCBGxOlb7rui1BYANWmyXgsJQnvg"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"235","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250005, Region: docker, API Version: v1","timestamp":"2025-09-01 16:32:43"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250005 in region: docker with version: v1","timestamp":"2025-09-01 16:32:43"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 16:32:43"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1Njc0NDM0MiwiZXhwIjoxNzU2NzQ3OTQyfQ.L7gMwBdIJ5NeF7rFCBGxOlb7rui1BYANWmyXgsJQnvg"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"270","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250005, Region: docker, API Version: v1","timestamp":"2025-09-01 16:33:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250005 in region: docker with version: v1","timestamp":"2025-09-01 16:33:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 16:33:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-01 16:33:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-01 16:33:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/verify/verify-token with method: POST","timestamp":"2025-09-01 16:33:35"}
+{"context":{"apiVersion":"v1","body":{"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1Njc0NDM0MiwiZXhwIjoxNzU5MzM2MzQyfQ.66b2M76UegMqJGXEmTT0NrlGQ2zJshn_V5EYDvpPKUc"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"174","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 162500005, Region: docker, API Version: v1","timestamp":"2025-09-01 16:34:32"}
+{"context":{"apiVersion":"v1","body":{"refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1Njc0NDM0MiwiZXhwIjoxNzU5MzM2MzQyfQ.66b2M76UegMqJGXEmTT0NrlGQ2zJshn_V5EYDvpPKUc"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"174","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250004, Region: docker, API Version: v1","timestamp":"2025-09-01 16:35:38"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250004 in region: docker with version: v1","timestamp":"2025-09-01 16:35:38"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 16:35:38"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1Njc0NDM0MiwiZXhwIjoxNzU5MzM2MzQyfQ.66b2M76UegMqJGXEmTT0NrlGQ2zJshn_V5EYDvpPKUc"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"209","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250004, Region: docker, API Version: v1","timestamp":"2025-09-01 16:35:57"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250004 in region: docker with version: v1","timestamp":"2025-09-01 16:35:57"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 16:35:57"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-01 16:35:57"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-01 16:35:57"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/refresh-token with method: POST","timestamp":"2025-09-01 16:35:57"}
+{"context":{"apiVersion":"v1","body":{"currentPassword":"Tanmay@1999","email":"rahulsingh@gmail.com","newPassword":"password"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0OTM5MmZjMSIsInJvbGVJZCI6IjAwMDEiLCJpYXQiOjE3MjU3MzA1NDMsImV4cCI6MTcyNTczMTQ0M30.Nx5xr6gbRL2txHgIwSSC8JRliGcw0-AUbdwoI6Jkhtg","connection":"close","content-length":"89","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250003, Region: docker, API Version: v1","timestamp":"2025-09-01 16:37:03"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250003 in region: docker with version: v1","timestamp":"2025-09-01 16:37:03"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 16:37:03"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: rahulsingh@gmail.com","timestamp":"2025-09-01 16:37:03"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: validateToken with config:","timestamp":"2025-09-01 16:37:03"}
+{"context":{"apiVersion":"v1","body":{"currentPassword":"Tanmay@1999","email":"rahulsingh@gmail.com","newPassword":"password"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJpYXQiOjE3NTY3NDQ1NTcsImV4cCI6MTc1Njc0NTQ1N30.-dHcaHicZJ8IDoT74RQwYI6f8N6PHL0EoWh0ZmsyHgs","connection":"close","content-length":"89","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250003, Region: docker, API Version: v1","timestamp":"2025-09-01 16:37:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250003 in region: docker with version: v1","timestamp":"2025-09-01 16:37:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 16:37:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: rahulsingh@gmail.com","timestamp":"2025-09-01 16:37:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: validateToken with config:","timestamp":"2025-09-01 16:37:36"}
+{"context":{"apiVersion":"v1","body":{"currentPassword":"Tanmay@1999","email":"rahulsingh@gmail.com","newPassword":"password"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","authorization":"Bearer Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJpYXQiOjE3NTY3NDQ1NTcsImV4cCI6MTc1Njc0NTQ1N30.-dHcaHicZJ8IDoT74RQwYI6f8N6PHL0EoWh0ZmsyHgs","connection":"close","content-length":"89","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250003, Region: docker, API Version: v1","timestamp":"2025-09-01 16:37:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250003 in region: docker with version: v1","timestamp":"2025-09-01 16:37:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 16:37:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: rahulsingh@gmail.com","timestamp":"2025-09-01 16:37:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: validateToken with config:","timestamp":"2025-09-01 16:37:53"}
+{"context":{"apiVersion":"v1","body":{"currentPassword":"Tanmay@1999","email":"rahulsingh@gmail.com","newPassword":"password"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJpYXQiOjE3NTY3NDQ1NTcsImV4cCI6MTc1Njc0NTQ1N30.-dHcaHicZJ8IDoT74RQwYI6f8N6PHL0EoWh0ZmsyHgs","connection":"close","content-length":"89","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250003, Region: docker, API Version: v1","timestamp":"2025-09-01 16:38:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250003 in region: docker with version: v1","timestamp":"2025-09-01 16:38:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 16:38:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: rahulsingh@gmail.com","timestamp":"2025-09-01 16:38:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: validateToken with config:","timestamp":"2025-09-01 16:38:20"}
+{"context":{"apiVersion":"v1","body":{"currentPassword":"Tanmay@1999","email":"rahulsingh@gmail.com","newPassword":"password"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1Njc0NDM0MiwiZXhwIjoxNzU2NzQ3OTQyfQ.L7gMwBdIJ5NeF7rFCBGxOlb7rui1BYANWmyXgsJQnvg","connection":"close","content-length":"89","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250003, Region: docker, API Version: v1","timestamp":"2025-09-01 16:38:33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250003 in region: docker with version: v1","timestamp":"2025-09-01 16:38:33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 16:38:33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: rahulsingh@gmail.com","timestamp":"2025-09-01 16:38:33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: validateToken with config:","timestamp":"2025-09-01 16:38:33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-01 16:38:33"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/change-password with method: POST","timestamp":"2025-09-01 16:38:33"}
+{"context":{"apiVersion":"v1","body":{"currentPassword":"Tanmay@1999","email":"tanmaysinghx99@gmail.com","newPassword":"Tanmay@1998"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1Njc0NDM0MiwiZXhwIjoxNzU2NzQ3OTQyfQ.L7gMwBdIJ5NeF7rFCBGxOlb7rui1BYANWmyXgsJQnvg","connection":"close","content-length":"96","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250003, Region: docker, API Version: v1","timestamp":"2025-09-01 16:39:02"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250003 in region: docker with version: v1","timestamp":"2025-09-01 16:39:02"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 16:39:02"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-01 16:39:02"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: validateToken with config:","timestamp":"2025-09-01 16:39:02"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-01 16:39:02"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/change-password with method: POST","timestamp":"2025-09-01 16:39:02"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-01 16:39:03"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 36000s)","timestamp":"2025-09-01 16:39:03"}
+{"context":{"apiVersion":"v1","body":{"currentPassword":"Tanmay@1998","email":"tanmaysinghx99@gmail.com","newPassword":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1Njc0NDM0MiwiZXhwIjoxNzU2NzQ3OTQyfQ.L7gMwBdIJ5NeF7rFCBGxOlb7rui1BYANWmyXgsJQnvg","connection":"close","content-length":"96","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250003, Region: docker, API Version: v1","timestamp":"2025-09-01 16:39:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250003 in region: docker with version: v1","timestamp":"2025-09-01 16:39:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-01 16:39:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-01 16:39:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: validateToken with config:","timestamp":"2025-09-01 16:39:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-01 16:39:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/change-password with method: POST","timestamp":"2025-09-01 16:39:14"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-01 16:39:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 36000s)","timestamp":"2025-09-01 16:39:15"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 08:00:59"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 08:00:59"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 08:00:59"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 08:00:59"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"61","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: docker, API Version: v1","timestamp":"2025-09-20 08:01:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: docker with version: v1","timestamp":"2025-09-20 08:01:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 08:01:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 08:01:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 08:01:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 08:01:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 08:01:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 08:01:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 08:01:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 08:01:24"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"close","content-length":"61","content-type":"application/json","host":"ts-workflow-engine-service-1606:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: docker, API Version: v1","timestamp":"2025-09-20 14:26:16"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: docker with version: v1","timestamp":"2025-09-20 14:26:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 14:26:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 14:26:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 14:26:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 14:26:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 14:26:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 14:26:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 14:26:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 14:26:24"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 14:31:17"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 14:31:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 14:31:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 14:31:18"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: docker, API Version: v1","timestamp":"2025-09-20 14:32:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: docker with version: v1","timestamp":"2025-09-20 14:32:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 14:32:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 14:32:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 14:32:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 14:32:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 14:32:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 14:32:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 14:32:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 14:32:19"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: docker, API Version: v1","timestamp":"2025-09-20 14:33:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: docker with version: v1","timestamp":"2025-09-20 14:33:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 14:33:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 14:33:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 14:33:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 14:33:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 14:33:01"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 14:33:01"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 14:33:01"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 14:33:01"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:06:38"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:06:38"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:06:38"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:06:38"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: docker, API Version: v1","timestamp":"2025-09-20 20:06:52"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: docker with version: v1","timestamp":"2025-09-20 20:06:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:06:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:06:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:06:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://ts-auth-service-1625:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:06:53"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-09-20 20:07:12"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-09-20 20:07:12"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:07:12"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:07:12"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:07:12"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:07:12"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 20:07:13"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 20:07:13"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 20:07:13"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 20:07:13"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:13:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:13:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:13:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:13:19"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-09-20 20:13:26"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-09-20 20:13:26"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:13:26"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:13:26"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:13:26"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:13:26"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 20:13:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 20:13:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 20:13:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 20:13:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:14:27"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:14:27"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:14:27"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:14:27"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:16:26"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:16:27"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:16:27"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:16:27"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:17:03"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:17:04"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:17:04"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:17:04"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-09-20 20:17:04"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-09-20 20:17:05"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:17:05"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:17:05"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:17:05"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:17:05"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 20:17:07"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 20:17:07"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 20:17:07"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 20:17:07"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:18:17"}
+{"clientVersion":"6.13.0","errorCode":"P1001","level":"\u001b[31merror\u001b[39m","message":"Database connection error: Can't reach database server at `db1625-db1625.i.aivencloud.com:23308`\n\nPlease make sure your database server is running at `db1625-db1625.i.aivencloud.com:23308`.","name":"PrismaClientInitializationError","stack":"PrismaClientInitializationError: Can't reach database server at `db1625-db1625.i.aivencloud.com:23308`\n\nPlease make sure your database server is running at `db1625-db1625.i.aivencloud.com:23308`.\n    at r (D:\\Code\\Projects\\ts-root-project-0001\\backend\\ts-workflow-engine-service-1606\\node_modules\\@prisma\\client\\src\\runtime\\core\\engines\\library\\LibraryEngine.ts:440:17)","timestamp":"2025-09-20 20:18:22"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:18:28"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:18:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:18:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:18:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:18:31"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-09-20 20:18:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-09-20 20:18:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:18:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:18:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:18:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:18:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 20:18:40"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 20:18:40"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 20:18:40"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 20:18:40"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:26:25"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:26:25"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:26:25"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:26:25"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:26:28"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:26:28"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:26:28"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:26:28"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:38:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:38:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:38:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:38:31"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-09-20 20:38:37"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-09-20 20:38:37"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:38:37"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:38:37"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:38:37"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:38:37"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 20:38:39"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 20:38:39"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 20:38:39"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 20:38:39"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:39:59"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:40:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:40:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:40:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:42:19"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:42:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:42:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:42:20"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-09-20 20:42:28"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-09-20 20:42:29"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:42:29"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:42:29"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:42:29"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:42:29"}
+{"0":"refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1ODM4MTE0OSwiZXhwIjoxNzYwOTczMTQ5fQ.3K-t5KaFAhmfav9VOgV7PQw7OaK5jsIu254oJ5gdJ64; Max-Age=604800; Path=/; Expires=Sat, 27 Sep 2025 15:12:30 GMT; HttpOnly; SameSite=None","1":"accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1ODM4MTE0OSwiZXhwIjoxNzU4Mzg0NzQ5fQ.hNmRUc5-3m0BLAQpA2Vgp7yFWalOKvoaZp1kk_Ur_ns; Max-Age=900; Path=/; Expires=Sat, 20 Sep 2025 15:27:30 GMT; SameSite=None","level":"\u001b[32minfo\u001b[39m","message":"Step callExternalService returned Set-Cookie headers","timestamp":"2025-09-20 20:42:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 20:42:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 20:42:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 20:42:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 20:42:30"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:42:52"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:42:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:42:53"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:42:53"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-09-20 20:43:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-09-20 20:43:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:43:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:43:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:43:00"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:43:00"}
+{"0":"refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1ODM4MTE4MSwiZXhwIjoxNzYwOTczMTgxfQ.Rv9sIgJDunOzSftQ80v0leMYZ8GIPeuOj0TrSNSnqWA; Max-Age=604800; Path=/; Expires=Sat, 27 Sep 2025 15:13:01 GMT; HttpOnly; SameSite=None","1":"accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1ODM4MTE4MSwiZXhwIjoxNzU4Mzg0NzgxfQ.6hYlob7Cz6ytX3a3DF29r7MpFfw-nfjGLuBrZxN8raY; Max-Age=900; Path=/; Expires=Sat, 20 Sep 2025 15:28:01 GMT; SameSite=None","level":"\u001b[32minfo\u001b[39m","message":"Step callExternalService returned Set-Cookie headers","timestamp":"2025-09-20 20:43:01"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 20:43:01"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 20:43:01"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 20:43:01"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 20:43:01"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:47:07"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:47:07"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:47:07"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:47:07"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:47:17"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:47:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:47:18"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:47:18"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-09-20 20:47:27"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-09-20 20:47:27"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:47:27"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:47:27"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:47:27"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:47:27"}
+{"0":"refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1ODM4MTQ0OCwiZXhwIjoxNzYwOTczNDQ4fQ.RGWAZHbKE4p8fMwtimS8FntKYbapoMKtO41XXNvqZAY; Max-Age=604800; Path=/; Expires=Sat, 27 Sep 2025 15:17:28 GMT; HttpOnly; SameSite=None","1":"accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1ODM4MTQ0OCwiZXhwIjoxNzU4Mzg1MDQ4fQ.jfyaebKbr36K8EYsXTp3qasnm_xvmWTXg1_Y47CmU5w; Max-Age=900; Path=/; Expires=Sat, 20 Sep 2025 15:32:28 GMT; SameSite=None","level":"\u001b[32minfo\u001b[39m","message":"Step callExternalService returned Set-Cookie headers","timestamp":"2025-09-20 20:47:28"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 20:47:28"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 20:47:28"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 20:47:28"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 20:47:28"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:48:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:48:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:48:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:48:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:48:46"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:48:47"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:48:47"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:48:47"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:48:57"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-09-20 20:48:57"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:48:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:48:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:48:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-09-20 20:48:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:48:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:48:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:48:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:48:58"}
+{"0":"refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1ODM4MTUzOCwiZXhwIjoxNzYwOTczNTM4fQ.QWD8e1d4zdYI4fEDgwIa5JmGuzedC5WWfwfJpuKV0RU; Max-Age=604800; Path=/; Expires=Sat, 27 Sep 2025 15:18:58 GMT; HttpOnly; SameSite=None","1":"accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1ODM4MTUzOCwiZXhwIjoxNzU4Mzg1MTM4fQ.acJYfs3kpZzBxCImnsz6eCDEA3cHDHbY2MPCY5M9JjE; Max-Age=900; Path=/; Expires=Sat, 20 Sep 2025 15:33:58 GMT; SameSite=None","level":"\u001b[32minfo\u001b[39m","message":"Step callExternalService returned Set-Cookie headers","timestamp":"2025-09-20 20:48:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 20:48:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 20:48:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 20:48:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 20:48:58"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:50:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:50:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:50:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:50:20"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:50:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:50:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:50:31"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:50:31"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-09-20 20:50:35"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-09-20 20:50:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:50:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:50:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:50:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:50:36"}
+{"0":"refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1ODM4MTYzNiwiZXhwIjoxNzYwOTczNjM2fQ.ag18a3k6Lou8fIZcx1ZClSLqu7Yy1ylFbRk9Wz8SpS0; Max-Age=604800; Path=/; Expires=Sat, 27 Sep 2025 15:20:36 GMT; HttpOnly; SameSite=None","1":"accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1ODM4MTYzNiwiZXhwIjoxNzU4Mzg1MjM2fQ.R0MTAxzQWIuxWzMIr_LIaNfIw_fQ6v1tdPR3VVaRnZc; Max-Age=900; Path=/; Expires=Sat, 20 Sep 2025 15:35:36 GMT; SameSite=None","level":"\u001b[32minfo\u001b[39m","message":"Step callExternalService returned Set-Cookie headers","timestamp":"2025-09-20 20:50:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 20:50:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 20:50:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 20:50:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 20:50:36"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:51:11"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:51:12"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:51:12"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:51:12"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port: 1606","timestamp":"2025-09-20 20:51:39"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connected successfully","timestamp":"2025-09-20 20:51:39"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Database connection successful","timestamp":"2025-09-20 20:51:39"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Swagger docs at /api-docs","timestamp":"2025-09-20 20:51:39"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-09-20 20:51:41"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-09-20 20:51:41"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:51:41"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:51:41"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:51:41"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:51:41"}
+{"0":"refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1ODM4MTcwMSwiZXhwIjoxNzYwOTczNzAxfQ.cPueJBGhhn2IzR2kyMeNiYu0Lbtim6NdE3gWbdP86m4; Max-Age=604800; Path=/; Expires=Sat, 27 Sep 2025 15:21:41 GMT; HttpOnly; SameSite=None","1":"accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1ODM4MTcwMSwiZXhwIjoxNzU4Mzg1MzAxfQ.qoHeHnyyq-UKW4JnaOe-Ebmg6ZzPYJfEoDfs3b-OiLA; Max-Age=900; Path=/; Expires=Sat, 20 Sep 2025 15:36:41 GMT; SameSite=None","level":"\u001b[32minfo\u001b[39m","message":"Step callExternalService returned Set-Cookie headers","timestamp":"2025-09-20 20:51:41"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 20:51:41"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 20:51:41"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 20:51:41"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 20:51:41"}
+{"context":{"apiVersion":"v1","body":{"email":"tanmaysinghx99@gmail.com","password":"Tanmay@1999"},"headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, compress, deflate, br","connection":"keep-alive","content-length":"61","content-type":"application/json","host":"localhost:1606","user-agent":"axios/1.7.7"},"method":"POST"},"level":"\u001b[32minfo\u001b[39m","message":"Handling workflow request for ID: 16250002, Region: local, API Version: v1","timestamp":"2025-09-20 20:51:55"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Processing workflow: 16250002 in region: local with version: v1","timestamp":"2025-09-20 20:51:55"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: contextPopulationStep with config:","timestamp":"2025-09-20 20:51:55"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[ContextPopulationStep] Email stored: tanmaysinghx99@gmail.com","timestamp":"2025-09-20 20:51:55"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: callExternalService with config:","timestamp":"2025-09-20 20:51:55"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Calling external service: http://localhost:1625/v2/api/auth/login with method: POST","timestamp":"2025-09-20 20:51:55"}
+{"0":"refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsImlhdCI6MTc1ODM4MTcxNSwiZXhwIjoxNzYwOTczNzE1fQ.w8rm2wm0_LXFAzK4jryR_XSlcFZrAWX1JbA8hm08FJ0; Max-Age=604800; Path=/; Expires=Sat, 27 Sep 2025 15:21:56 GMT; HttpOnly; SameSite=None","1":"accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5NGFlMWZiOCIsInJvbGVJZCI6IjAwMDUiLCJlbWFpbCI6InRhbm1heXNpbmdoeDk5QGdtYWlsLmNvbSIsImlhdCI6MTc1ODM4MTcxNSwiZXhwIjoxNzU4Mzg1MzE1fQ.gXYnJ26nksHYPxrgaevYUNdXKnn4eUY2HWT_-lwoCPc; Max-Age=900; Path=/; Expires=Sat, 20 Sep 2025 15:36:56 GMT; SameSite=None","level":"\u001b[32minfo\u001b[39m","message":"Step callExternalService returned Set-Cookie headers","timestamp":"2025-09-20 20:51:56"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: notificationStep with config:","timestamp":"2025-09-20 20:51:56"}
+{"level":"\u001b[32minfo\u001b[39m","message":"[NotificationStep] Event published & data cached for user: tanmaysinghx99@gmail.com (TTL: 6000s)","timestamp":"2025-09-20 20:51:56"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsStep with config:","timestamp":"2025-09-20 20:51:56"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Executing step: metricsFinalizeStep with config:","timestamp":"2025-09-20 20:51:56"}
