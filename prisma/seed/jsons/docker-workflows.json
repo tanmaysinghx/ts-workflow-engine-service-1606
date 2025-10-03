@@ -138,5 +138,32 @@
         "otpFlow": false,
         "notification": false,
         "extraSteps": []
+    },
+    {
+        "workflowId": "16250010",
+        "name": "Create Ticket Workflow - Docker",
+        "region": "docker",
+        "microserviceName": "ticket-service",
+        "microservicePrefix": "http://ts-ticket-service-1674:1674",
+        "downstreamEndpoint": "/api/v1/tickets/create-ticket", 
+        "method": "POST",
+        "tokenCheck": false,
+        "otpFlow": false,
+        "notification": false,
+        "extraSteps": []
+    },
+    {
+        "workflowId": "16250011",
+        "name": "Get Ticket Workflow - Docker",
+        "region": "docker",
+        "microserviceName": "ticket-service",
+        "microservicePrefix": "http://ts-ticket-service-1674:1674",
+        "downstreamEndpoint": "/api/v1/tickets/get-ticket", 
+        "method": "GET",
+        "tokenCheck": false,
+        "otpFlow": false,
+        "notification": false,
+        "extraSteps": []
     }
+
 ]

@@ -20,23 +20,22 @@ export async function contextPopulationStep(config: any, context: StepContext) {
     }
 
     // 2. If JWT not found, check body
-    if (!email && context?.body?.email || context?.body?.userEmail || context?.body?.emailId) {
-        email = context?.body.email;
+    if (!email && (context?.body?.email || context?.body?.userEmail || context?.body?.emailId)) {
+        email = context.body.email || context.body.userEmail || context.body.emailId;
     }
 
     // 3. If still not found, check params/query
     if (!email && (context.params?.email || context.query?.email || context.query?.userEmail || context.query?.emailId)) {
-        email = context.params?.email || context.query?.email;
+        email = context.params?.email || context.query?.email || context.query?.userEmail || context.query?.emailId;
     }
 
-    if (!email) {
-        console.error("[ContextPopulationStep] No email found in JWT, body, or params/query");
-        return { success: false, error: "Missing email in request" };
+    // Store in context (if found)
+    if (email) {
+        context.user = { ...(context.user || {}), email };
+        logger.info(`[ContextPopulationStep] Email stored: ${email}`);
+    } else {
+        logger.info("[ContextPopulationStep] No email found, continuing without it");
     }
 
-    // Store in context for future steps
-    context.user = { ...(context.user || {}), email };
-
-    logger.info(`[ContextPopulationStep] Email stored: ${email}`);
-    return { success: true, email };
-}
+    return { success: true, email }; // Always return success
+};
